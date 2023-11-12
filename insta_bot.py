@@ -22,11 +22,11 @@ class Bot:
         
         user = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#loginForm > div > div:nth-child(1) > div > label > input')))
         user.click()
-        user.send_keys('pm_1234567890')
+        user.send_keys('')
         
         passwd = self.driver.find_element_by_css_selector('#loginForm > div > div:nth-child(2) > div > label > input')
         passwd.click()
-        passwd.send_keys('Pouria.1378')
+        passwd.send_keys('')
         
         login = self.driver.find_element_by_css_selector('#loginForm > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.bkEs3.CovQj.jKUp7.DhRcB')
         login.click()
